@@ -1,0 +1,32 @@
+.inputPlus {
+	widows: 100%;
+	display: grid;
+	grid-template-columns: 1fr 60px;
+	margin-bottom: 15px;
+
+	&Value {
+		padding: 9px 10px;
+		background-color: #dbe2ef;
+		border: 1px solid #b1b1b1;
+		border-radius: 5px 0 0 5px;
+		outline-color: #3F72AF;
+
+		&::placeholder {
+			color: #7b7b7b;
+		}
+	}
+
+	&Button {
+		border: none;
+		background: #3F72AF url('./images/plus.svg') no-repeat center;
+		border-radius: 0 5px 5px 0;
+		cursor: pointer;
+		transition: opacity 0.3s ease 0s;
+
+		@media (any-hover: hover) {
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+	}
+}
